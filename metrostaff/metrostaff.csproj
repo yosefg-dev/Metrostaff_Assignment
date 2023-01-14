@@ -9,13 +9,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="MySql.Data" Version="8.0.31" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="System\Windows\" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
-    <PackageReference Include="MySql.Data" Version="8.0.31" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <Reference Include="Math">
+      <HintPath>..\Calculator\Calculator\bin\Debug\net6.0-windows\Math.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

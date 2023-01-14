@@ -37,6 +37,11 @@
             this.txtYAxis = new System.Windows.Forms.TextBox();
             this.txtZAxis = new System.Windows.Forms.TextBox();
             this.lblHeader = new System.Windows.Forms.Label();
+            this.btnCalculator = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.machineSystemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGetInstance
@@ -121,12 +126,49 @@
             this.lblHeader.TabIndex = 8;
             this.lblHeader.Text = "Machine System Assignment MAC";
             // 
+            // btnCalculator
+            // 
+            this.btnCalculator.Location = new System.Drawing.Point(313, 264);
+            this.btnCalculator.Name = "btnCalculator";
+            this.btnCalculator.Size = new System.Drawing.Size(187, 29);
+            this.btnCalculator.TabIndex = 9;
+            this.btnCalculator.Text = "Calculator";
+            this.btnCalculator.UseVisualStyleBackColor = true;
+            this.btnCalculator.Click += new System.EventHandler(this.btnCalculator_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.machineSystemToolStripMenuItem,
+            this.calculatorToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(797, 28);
+            this.menuStrip1.TabIndex = 10;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // machineSystemToolStripMenuItem
+            // 
+            this.machineSystemToolStripMenuItem.Name = "machineSystemToolStripMenuItem";
+            this.machineSystemToolStripMenuItem.Size = new System.Drawing.Size(130, 24);
+            this.machineSystemToolStripMenuItem.Text = "Machine System";
+            this.machineSystemToolStripMenuItem.Click += new System.EventHandler(this.machineSystemToolStripMenuItem_Click);
+            // 
+            // calculatorToolStripMenuItem
+            // 
+            this.calculatorToolStripMenuItem.Name = "calculatorToolStripMenuItem";
+            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
+            this.calculatorToolStripMenuItem.Text = "Calculator";
+            this.calculatorToolStripMenuItem.Click += new System.EventHandler(this.calculatorToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(797, 431);
+            this.Controls.Add(this.btnCalculator);
             this.Controls.Add(this.lblHeader);
             this.Controls.Add(this.txtZAxis);
             this.Controls.Add(this.txtYAxis);
@@ -136,8 +178,12 @@
             this.Controls.Add(this.lblXAxis);
             this.Controls.Add(this.btnGetData);
             this.Controls.Add(this.btnGetInstance);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "MetroStaff";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,5 +200,9 @@
         private TextBox txtYAxis;
         private TextBox txtZAxis;
         private Label lblHeader;
+        private Button btnCalculator;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem machineSystemToolStripMenuItem;
+        private ToolStripMenuItem calculatorToolStripMenuItem;
     }
 }
