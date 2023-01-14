@@ -9,7 +9,7 @@ using Org.BouncyCastle.Asn1.Mozilla;*/
 
 namespace metrostaff.Controllers
 {
-    internal class manupulation
+    internal class Manupulation
     {
         public double getLargestAxis(double first, double second, double third)
         {

@@ -37,7 +37,6 @@
             this.txtYAxis = new System.Windows.Forms.TextBox();
             this.txtZAxis = new System.Windows.Forms.TextBox();
             this.lblHeader = new System.Windows.Forms.Label();
-            this.btnCalculator = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.machineSystemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -126,16 +125,6 @@
             this.lblHeader.TabIndex = 8;
             this.lblHeader.Text = "Machine System Assignment MAC";
             // 
-            // btnCalculator
-            // 
-            this.btnCalculator.Location = new System.Drawing.Point(313, 264);
-            this.btnCalculator.Name = "btnCalculator";
-            this.btnCalculator.Size = new System.Drawing.Size(187, 29);
-            this.btnCalculator.TabIndex = 9;
-            this.btnCalculator.Text = "Calculator";
-            this.btnCalculator.UseVisualStyleBackColor = true;
-            this.btnCalculator.Click += new System.EventHandler(this.btnCalculator_Click);
-            // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -168,7 +157,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(797, 431);
-            this.Controls.Add(this.btnCalculator);
             this.Controls.Add(this.lblHeader);
             this.Controls.Add(this.txtZAxis);
             this.Controls.Add(this.txtYAxis);
@@ -200,7 +188,6 @@
         private TextBox txtYAxis;
         private TextBox txtZAxis;
         private Label lblHeader;
-        private Button btnCalculator;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem machineSystemToolStripMenuItem;
         private ToolStripMenuItem calculatorToolStripMenuItem;

@@ -2,29 +2,29 @@ using System;
 
 namespace MathOperation
 {
-    public class Math
+    public class MathF
     {
-        public double add(double oprand1, double oprand2)
+        public static double Add(double oprand1, double oprand2)
         {
             return oprand1 + oprand2;
         }
-        public double subtract(double oprand1, double oprand2)
+        public static double Subtract(double oprand1, double oprand2)
         {
             return oprand1 - oprand2;
         }
-        public double multiply(double oprand1, double oprand2)
+        public static double Multiply(double oprand1, double oprand2)
         {
             return oprand1 * oprand2;
         }
-        public double divide(double oprand1, double oprand2)
+        public static double Divide(double oprand1, double oprand2)
         {
             return oprand1 / oprand2;   
         }
-        public double sqrt(double number)
+        public static double Sqrt(double number)
         {
             return System.Math.Sqrt(number);
         }
-        public double powerOf(double bas, double power) { 
+        public static double PowerOf(double bas, double power) { 
             return System.Math.Pow(bas, power);
         }
     }

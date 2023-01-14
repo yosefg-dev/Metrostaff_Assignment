@@ -15,8 +15,7 @@ namespace metrostaff
     public partial class Calculator : Form
     {
         int oprand;
-        /*MathOperation.Math opiration = new MathOperation.Math();*/
-        AdvancedMath opiration = new AdvancedMath(0,1);
+        AdvancedMath mathobj = new AdvancedMath();
         public Calculator()
         {
             InitializeComponent();
@@ -53,7 +52,7 @@ namespace metrostaff
         {
             try
             {
-                txtBox.Text = opiration.sin(double.Parse(textBox1.Text)).ToString();
+                txtBox.Text = mathobj.Sin(double.Parse(textBox1.Text)).ToString();
             }
             catch (Exception ex)
             {
@@ -65,7 +64,7 @@ namespace metrostaff
         {
             try
             {
-                txtBox.Text = opiration.cos(double.Parse(textBox1.Text)).ToString();
+                txtBox.Text = mathobj.Cos(double.Parse(textBox1.Text)).ToString();
             }
             catch (Exception ex)
             {
@@ -77,7 +76,7 @@ namespace metrostaff
         {
             try
             {
-                txtBox.Text = opiration.tan(double.Parse(textBox1.Text)).ToString();
+                txtBox.Text = mathobj.Tan(double.Parse(textBox1.Text)).ToString();
             }
             catch (Exception ex)
             {
@@ -89,7 +88,7 @@ namespace metrostaff
         {
             try
             {
-                txtBox.Text = opiration.asin(double.Parse(textBox1.Text)).ToString();
+                txtBox.Text = mathobj.Asin(double.Parse(textBox1.Text)).ToString();
             }
             catch (Exception ex)
             {
@@ -101,7 +100,7 @@ namespace metrostaff
         {
             try
             {
-                txtBox.Text = opiration.acos(double.Parse(textBox1.Text)).ToString();
+                txtBox.Text = mathobj.Acos(double.Parse(textBox1.Text)).ToString();
             }
             catch (Exception ex)
             {
@@ -113,7 +112,7 @@ namespace metrostaff
         {
             try
             {
-                txtBox.Text = opiration.atan(double.Parse(textBox1.Text)).ToString();
+                txtBox.Text = mathobj.Atan(double.Parse(textBox1.Text)).ToString();
             }
             catch (Exception ex)
             {
@@ -130,7 +129,7 @@ namespace metrostaff
                 case 1:
                     try
                     {
-                        txtBox.Text = opiration.add(double.Parse(textBox1.Text), double.Parse(textBox2.Text)).ToString();
+                        txtBox.Text = AdvancedMath.Add(double.Parse(textBox1.Text), double.Parse(textBox2.Text)).ToString();
                     }
                     catch (Exception ex)
                     {
@@ -140,7 +139,7 @@ namespace metrostaff
                 case 2:
                     try
                     {
-                        txtBox.Text = opiration.subtract(double.Parse(textBox1.Text), double.Parse(textBox2.Text)).ToString();
+                        txtBox.Text = AdvancedMath.Subtract(double.Parse(textBox1.Text), double.Parse(textBox2.Text)).ToString();
                     }
                     catch (Exception ex)
                     {
@@ -149,7 +148,7 @@ namespace metrostaff
                     break;
                 case 3:
                     try { 
-                        txtBox.Text = opiration.multiply(double.Parse(textBox1.Text), double.Parse(textBox2.Text)).ToString();
+                        txtBox.Text = AdvancedMath.Multiply(double.Parse(textBox1.Text), double.Parse(textBox2.Text)).ToString();
                     }
                     catch (Exception ex)
                     {
@@ -159,7 +158,7 @@ namespace metrostaff
                 case 4:
                     try
                     {
-                        txtBox.Text = opiration.divide(double.Parse(textBox1.Text), double.Parse(textBox2.Text)).ToString();
+                        txtBox.Text = AdvancedMath.Divide(double.Parse(textBox1.Text), double.Parse(textBox2.Text)).ToString();
                     }
                     catch(Exception ex)
                     {
@@ -169,7 +168,7 @@ namespace metrostaff
                 case 5:
                     try
                     {
-                        txtBox.Text = opiration.powerOf(double.Parse(textBox1.Text), double.Parse(textBox2.Text)).ToString();
+                        txtBox.Text = AdvancedMath.PowerOf(double.Parse(textBox1.Text), double.Parse(textBox2.Text)).ToString();
                     }
                     catch(Exception ex)
                     {
@@ -186,7 +185,7 @@ namespace metrostaff
         {
             try
             {
-                txtBox.Text = opiration.sqrt(double.Parse(textBox1.Text)).ToString();
+                txtBox.Text = AdvancedMath.Sqrt(double.Parse(textBox1.Text)).ToString();
             }
             catch(Exception ex)
             {
@@ -202,7 +201,7 @@ namespace metrostaff
         {
             try
             {
-                txtBox.Text = opiration.fibonacci(int.Parse(textBox1.Text));
+                txtBox.Text = mathobj.Fibonacci(int.Parse(textBox1.Text));
             }
             catch(Exception ex)
             {

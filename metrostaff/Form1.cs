@@ -31,7 +31,6 @@ namespace metrostaff
             updateDataScreen();
 
         }
-
         public void initialize_Axis(double xax, double yax, double zax)
         {
             txtXAxis.Text = xax.ToString();
@@ -48,7 +47,7 @@ namespace metrostaff
              */
 
             int timeDelay = 1000;
-            manupulation MoveAxis = new manupulation();
+            Manupulation MoveAxis = new Manupulation();
             do
             {
                 double largAxis = MoveAxis.getLargestAxis(xConverted, yConverted, zConverted);
@@ -108,10 +107,6 @@ namespace metrostaff
             Double.TryParse(txtZAxis.Text, out zAxis);
             MessageBox.Show("" + xAxis + " " + yAxis + " " + zAxis);
 
-        }
-        private void btnCalculator_Click(object sender, EventArgs e)
-        {
-            DialogResult result = new Calculator().ShowDialog();
         }
 
         private void calculatorToolStripMenuItem_Click(object sender, EventArgs e)

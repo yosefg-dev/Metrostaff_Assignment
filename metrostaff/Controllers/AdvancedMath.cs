@@ -1,47 +1,44 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;*/
+using System.Threading.Tasks;
 
 namespace metrostaff.Controllers
 {
     //i am using the full path name on the inheritance b.c i need to specify
     // the Math class built in class and the customized class that i created in the dll file
-    internal class AdvancedMath : MathOperation.Math
+    internal class AdvancedMath : MathOperation.MathF, AdvancedCalculator
     {
-        int val1, val2; 
-        public AdvancedMath(int val1, int val2) {
-            this.val1 = val1;
-            this.val2 = val2;
+        public AdvancedMath() { 
         }
-        public double sin(double oprand)
+        public double Sin(double oprand) 
         {
-            return Math.Sin(oprand);
+            return MathF.Sin(((float)oprand));
         }
-        public double cos(double oprand)
+        public double Cos(double oprand)
         {
-            return Math.Cos(oprand);
+            return MathF.Cos(((float)oprand));
         }
-        public double tan(double oprand)
+        public double Tan(double oprand)
         {
-            return Math.Tan(oprand);
+            return MathF.Tan(((float)oprand));
         }
-        public double asin(double oprand)
+        public double Asin(double oprand)
         {
-            return Math.Asin(oprand);
+            return MathF.Asin(((float)oprand));
         }
-        public double acos(double oprand)
+        public double Acos(double oprand)
         {
-            return Math.Acos(oprand);
+            return MathF.Acos(((float)oprand));
         }
-        public double atan(double oprand)
+        public double Atan(double oprand)
         {
-            return Math.Atan(oprand);
+            return MathF.Atan(((float)oprand));
         }
-        public string fibonacci(int oprand)
+        public string Fibonacci(int oprand)
         {
-            int val3, i;
+            int val1,val2,val3, i;
             val1 = 0;
             val2 = 1;
             string result = val1 + " " + val2 + " ";
