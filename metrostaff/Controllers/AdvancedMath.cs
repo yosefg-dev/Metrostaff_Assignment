@@ -6,6 +6,8 @@ using System.Threading.Tasks;*/
 
 namespace metrostaff.Controllers
 {
+    //i am using the full path name on the inheritance b.c i need to specify
+    // the Math class built in class and the customized class that i created in the dll file
     internal class AdvancedMath : MathOperation.Math
     {
         int val1, val2; 
