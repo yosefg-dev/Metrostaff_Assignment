@@ -16,4 +16,5 @@ namespace metrostaff
         double Atan(double x);
         string Fibonacci(int x);
     }
+
 }
